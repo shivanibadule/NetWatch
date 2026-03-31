@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "NetWatch Browser Monitor",
+  "version": "1.0",
+  "description": "Monitors file downloads inside the browser and forwards them to your NetWatch dashboard in real time.",
+  "permissions": [
+    "downloads",
+    "webRequest",
+    "webRequestBlocking",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>",
+    "http://localhost:8000/*",
+    "http://[IP_ADDRESS]/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
